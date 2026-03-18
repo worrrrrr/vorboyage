@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorboyage - AI Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Vorboyage</h1>
+            <button id="newChatBtn" class="btn-primary">+ New Chat</button>
+            <div id="chatList" class="chat-list"></div>
+        </aside>
+
+        <main class="chat-area">
+            <div class="chat-header">
+                <h2 id="chatTitle">New Conversation</h2>
+                <div class="header-actions">
+                    <input type="text" id="systemPrompt" placeholder="Set system prompt..." class="prompt-input">
+                    <button id="updatePromptBtn" class="btn-small">Update</button>
+                </div>
+            </div>
+
+            <div id="messagesContainer" class="messages"></div>
+
+            <div class="input-area">
+                <textarea id="messageInput" placeholder="Type your message here..." rows="3"></textarea>
+                <button id="sendBtn" class="btn-send">Send</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
